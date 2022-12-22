@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>FOOOOD</title>
+  <link rel="stylesheet" href="dom4.css">
+  <script src="dom4.js" type="text/javascript"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $("#myInputt").on("keyup", function () {
+        var value = $(this).val().toLowerCase();
+        $("#myTablee tr").filter(function () {
+          $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+        });
+      });
+    });
+    $(document).ready(function () {
+      $("#myInputtt").on("keyup", function () {
+        var value = $(this).val().toLowerCase();
+        $("#myTableee tr").filter(function () {
+          $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+        });
+      });
+    });
+    $(document).ready(function () {
+      $("#myInputttt").on("keyup", function () {
+        var value = $(this).val().toLowerCase();
+        $("#myTableeee tr").filter(function () {
+          $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+        });
+      });
+    });
+
+    let mybutton = document.getElementById("myBtn");
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+
+</head>
+
+<body>
+  <div class="klasa">
+    <h1>BEST PLACES TO EAT IN TOWN</h1>
+  </div>
+
+  <p id="p1">Пребарај пица:</p>
+  <input id="myInputt" type="text" placeholder="Ми се јаде од...">
+  <br><br>
+  <div class="d1">
+    <table>
+      <thead>
+        <caption id="pz">ПИЦА</caption>
+        <tr>
+          <th>Место</th>
+          <th>Населба</th>
+          <th>Контакт</th>
+          <th>Страница</th>
+        </tr>
+      </thead>
+      <tbody id="myTablee">
+        <tr>
+          <td>JAKOMO</td>
+          <td>Карпош</td>
+          <td>078 338 668</td>
+          <td><a href="https://pizzajakomo.com/">Јакомо</a></td>
+        </tr>
+        <tr>
+          <td>JAKOMO</td>
+          <td>Аеродром</td>
+          <td>072 243 000</td>
+          <td><a href="https://pizzajakomo.com/">Јакомо</a></td>
+        </tr>
+        <tr>
+          <td>DOMINO'S</td>
+          <td>Карпош, Центар, Аеродром</td>
+          <td>02 312 5125</td>
+          <td><a href="https://www.dominos.mk/">Доминос</a></td>
+        </tr>
+        <tr>
+          <td>PORTOFINO</td>
+          <td>Млечен</td>
+          <td>077 848 298</td>
+          <td><a href="http://pizzaportofino.mk/">Портофино</a></td>
+        </tr>
+        <tr>
+          <td>MORINO</td>
+          <td>Млечен</td>
+          <td>075 404 400</td>
+          <td><a href="https://www.facebook.com/pizzamorino1/">Морино</a></td>
+        </tr>
+        <tr>
+          <td>MAMMA ITALIANA</td>
+          <td>Центар</td>
+          <td>078 753 777</td>
+          <td><a href="https://www.facebook.com/mamma.italiana1/">Мамма Италиана</a></td>
+        </tr>
+        <tr>
+          <td>PEMPELE</td>
+          <td>Млечен</td>
+          <td>070 652 222</td>
+          <td><a href="https://www.facebook.com/pizzapempele/">Пемпеле</a></td>
+        </tr>
+        <tr>
+          <td>LA PIZZA</td>
+          <td>Аеродром</td>
+          <td>072 575 756</td>
+          <td><a href="https://www.facebook.com/lapizzaskopje/">Ла Пица</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p id="p2">Пребарај бургер:</p>
+  <input id="myInputtt" type="text" placeholder="Ми се јаде од...">
+  <br><br>
+  <div class="d2">
+    <table>
+      <thead>
+        <caption id="br">БУРГЕР</caption>
+        <tr>
+          <th>Место</th>
+          <th>Населба</th>
+          <th>Контакт</th>
+          <th>Страница</th>
+        </tr>
+      </thead>
+      <tbody id="myTableee">
+        <tr>
+          <td>BAKING BREAD</td>
+          <td>Карпош</td>
+          <td> 070 216 090</td>
+          <td><a href="https://www.facebook.com/waltersbakingbread/">Baking Bread</a></td>
+        </tr>
+        <tr>
+          <td>7ca</td>
+          <td>Карпош</td>
+          <td>02 309 0030</td>
+          <td><a href="https://www.7.mk/">7ца</a></td>
+        </tr>
+        <tr>
+          <td>7ca</td>
+          <td>Аеродром</td>
+          <td>02 244 7774</td>
+          <td><a href="https://www.7.mk/">7ца</a></td>
+        </tr>
+        <tr>
+          <td>7ca</td>
+          <td>Центар</td>
+          <td>02 321 1914</td>
+          <td><a href="https://www.7.mk/">7ца</a></td>
+        </tr>
+        <tr>
+          <td>KIOSK</td>
+          <td>Центар</td>
+          <td>077 408 777</td>
+          <td><a href="https://www.facebook.com/kioskburgerbar/">Киоск</a></td>
+        </tr>
+        <tr>
+          <td>SPACE BURGER</td>
+          <td>Центар</td>
+          <td>071 386 334</td>
+          <td><a href="https://www.kliknijadi.mk/mk/restaurant/SPACE-BURGER">Space Burger</a></td>
+        </tr>
+        <tr>
+          <td>ROYAL</td>
+          <td>Дебар Маало</td>
+          <td>078 870 000</td>
+          <td><a href="https://www.facebook.com/pizzamorino1/">Royal</a></td>
+        </tr>
+        <tr>
+          <td>ROYAL</td>
+          <td>Ново Лисиче</td>
+          <td>078 834 444</td>
+          <td><a href="https://www.facebook.com/pizzamorino1/">Royal</a></td>
+        </tr>
+    </table>
+    <p id="p3">Пребарај здрава опција:</p>
+    <input id="myInputttt" type="text" placeholder="Ми се јаде од...">
+    <br><br>
+  </div>
+
+  <div class="d3">
+    <table>
+      <thead>
+        <caption id="ho">Healthy option</caption>
+        <tr>
+          <th>Место</th>
+          <th>Населба</th>
+          <th>Контакт</th>
+          <th>Страница</th>
+        </tr>
+      </thead>
+      <tbody id="myTableeee">
+        <tr>
+          <td>FITNESS HOUSE</td>
+          <td>Дебар Маало</td>
+          <td> 072 699 999</td>
+          <td><a href="https://fitnesshouse.mk/">Fitness House</a></td>
+        </tr>
+        <tr>
+          <td>HEALTHYISH</td>
+          <td>Карпош</td>
+          <td>075 318 712</td>
+          <td><a href="https://www.instagram.com/healthyish.healthyish/?hl=en">Healthyish</a></td>
+        </tr>
+        <tr>
+          <td>Nod Healthy Food</td>
+          <td>Дебар</td>
+          <td>02 244 7774</td>
+          <td><a href="https://www.facebook.com/nodplantbased/">Nod Healthy Food</a></td>
+        </tr>
+        <tr>
+          <td>Markt Kitchen</td>
+          <td>Центар</td>
+          <td>078 423 815</td>
+          <td><a href="https://www.7.mk/">Markt Kitchen</a></td>
+        </tr>
+        <tr>
+
+      </tbody>
+    </table>
+    <br>
+    <br>
+    <br>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Врати се назад</button>
+    <br>
+    <br>
+    <br>
+</body>
+
+</html>
